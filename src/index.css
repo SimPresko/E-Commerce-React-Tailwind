@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+* {
+  font-family: Josefin Sans, sans-serif;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@layer components {
+  .gradient-bg {
+    /* @apply bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 min-h-screen; */
+    /* @apply min-h-screen bg-[linear-gradient(45deg,_#ff9a9e,_#fad0c4,_#ffdde1,_#fbc2eb)] bg-[length:400%_400%] animate-[gradientMove_6s_ease-in-out_infinite]; */
+    /* @apply min-h-screen bg-gradient-to-b from-gray-900 to-gray-800; */
+    /* @apply min-h-screen bg-gradient-to-tr from-green-300 via-blue-300 to-indigo-400; */
+    @apply min-h-screen bg-gradient-to-br from-sky-900 to-sky-950;
+  }
+}
